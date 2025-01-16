@@ -1,0 +1,92 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* New Submission Container */
+.new-submission-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 85vh;
+}
+
+/* New Submission Title */
+.new-submission-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* New Submission Form */
+.new-submission-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  background-color: #0f3460;
+  padding: 45px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.new-form-input,
+.new-form-textarea {
+  width: 65%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  outline: none;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Focus Effect */
+.new-form-input:focus,
+.new-form-textarea:focus {
+  border: 1px solid #e94560;
+  background-color: #f0f0f0;
+}
+
+/* Textarea Styling */
+.new-form-textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Submit Button */
+.new-form-button {
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.new-form-button:hover {
+  background-color: #ff5a76;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .new-submission-form {
+    width: 90%;
+  }
+}

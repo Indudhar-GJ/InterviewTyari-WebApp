@@ -1,0 +1,151 @@
+/* MySubmissions.css */
+
+body {
+  background-color: #f5f8fa;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.my-submissions {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.my-submissions-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.submission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.submission-item {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.submission-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submission-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submission-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+.submission-company {
+  font-size: 14px;
+  color: #657786;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.delete-button {
+  background-color: #e0245e;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c21a4c;
+}
+
+.submission-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 15px;
+  border-left: 3px solid #1da1f2;
+}
+
+@media (max-width: 768px) {
+  .submission-item {
+    padding: 12px;
+  }
+
+  .submission-name {
+    font-size: 16px;
+  }
+
+  .delete-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+/* MySubmissions.css */
+
+.submission-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.submission-details.show {
+  max-height: 200px; /* Adjust based on your content */
+  opacity: 1;
+}
+
+.submission-details.hide {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Optional: Smooth scrolling for better visual feedback */
+.submission-item {
+  scroll-behavior: smooth;
+}
+/* MySubmissions.css */
+
+/* Hide the message initially */
+.submission-details {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.6s ease, opacity 0.6s ease; /* Slow down the transition */
+}
+
+/* When the message is visible */
+.submission-details.show {
+  height: auto; /* Adjust this to content's natural height */
+  padding-left: 10px; /* Add padding if needed */
+  opacity: 1;
+}
+
+/* When the message is hidden */
+.submission-details.hide {
+  height: 0;
+  opacity: 0;
+}
+
+/* Optional: Smooth scrolling for better visual feedback */
+.submission-item {
+  scroll-behavior: smooth;
+}
